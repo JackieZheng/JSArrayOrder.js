@@ -1,5 +1,5 @@
 # JSArrayOrder.js
-JS Array 进行多条件 指定顺序排序
+JS Array 进行无限制多条件排序 可以指定正反顺序，排序优先级依指定字段属性顺序
 ```
 //测试例子
 var arr = [{

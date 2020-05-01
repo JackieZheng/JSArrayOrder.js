@@ -13,13 +13,13 @@ function compare(a, b, orderArray, isReverse) {
     }
 }
 /**
- * orderArray 指定排序 属性 eg：["name", "num", "time"]
+ * orderArray 指定排序属性，优先级依先后顺序 eg：["name", "num", "time"]
  * isReverse 是否倒序，默认 false
  */
 Array.prototype.orderBy = (Array.prototype.orderBy = function (orderArray, isReverse) {
     if (typeof (orderArray) === 'boolean' || typeof (orderArray) === "undefined") {
         isReverse = orderArray;
-        orderArray = "";
+        orderArray = '';
     }
     if (typeof (orderArray) === 'string') {
         let str = orderArray;
@@ -30,3 +30,5 @@ Array.prototype.orderBy = (Array.prototype.orderBy = function (orderArray, isRev
         return compare(a, b, orderArray, isReverse)
     })
 })
+
+
